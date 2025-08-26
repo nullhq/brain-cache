@@ -25,10 +25,10 @@ app.get("/api/:date?", function (req, res) {
     if (isNaN(date.valueOf())) {
       return res.json({error : "Invalid Date"});
     }
-    res.json({unix: date.valueOf(), utc: date.toString()});
+    res.json({unix: date.valueOf(), utc: date.toUTCString()});
   } else {
     date = new Date();
-    res.json({unix: date.valueOf(), utc: date.toString()});
+    res.json({unix: date.valueOf(), utc: date.toUTCString()});
   }
 });
 
