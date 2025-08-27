@@ -1,6 +1,6 @@
 # Timestamp Microservice
 
-Goal: build a tiny version of the [FCC project](https://timestamp-microservice.freecodecamp.rocks)
+Goal: build a tiny version of the official example [here](https://timestamp-microservice.freecodecamp.rocks)
 
 What I focused on:
 - Really understanding the Date object (`new Date()`, `valueOf()`, `Date.parse()`, `toUTCString()`).
