@@ -18,13 +18,13 @@ function tribonacciSequence(startSequence, length) {
     while (i < length) {
         if (i<3) {
             outputSequence.push(startSequence[i]); // as the starting numbers are part of sequence.
-            i++;
         } else {
             let currentLength = outputSequence.length;
             let summ = outputSequence[currentLength-1] + outputSequence[currentLength - 2] + outputSequence[currentLength - 3];
             outputSequence.push(summ); // because each number is the sum of the three preceding ones ;)
-            i++;
         }
+
+        i++;
     }
 
     return outputSequence;
